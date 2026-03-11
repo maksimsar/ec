@@ -1,12 +1,20 @@
 import ProductCard from '../ProductCard/ProductCard';
+import './ProductList.css';
 
 function ProductList({ products, onCardClick }) {
   if (!products.length) {
-    return <p>Ничего не найдено.</p>;
+    return (
+      <div className="empty-state">
+        <h3 className="empty-state__title">Ничего не найдено</h3>
+        <p className="empty-state__text">
+          Попробуй изменить фильтры или поисковый запрос.
+        </p>
+      </div>
+    );
   }
 
   return (
-    <section className="products-list">
+    <div className="products-grid">
       {products.map((product) => (
         <ProductCard
           key={product.id}
@@ -14,7 +22,7 @@ function ProductList({ products, onCardClick }) {
           onClick={onCardClick}
         />
       ))}
-    </section>
+    </div>
   );
 }
 

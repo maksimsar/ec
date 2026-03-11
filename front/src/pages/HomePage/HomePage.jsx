@@ -1,70 +1,95 @@
-import { useEffect, useMemo, useState } from 'react';
+import { useMemo, useState } from 'react';
 import Filters from '../../components/Filters/Filters';
 import ProductList from '../../components/ProductList/ProductList';
 import Modal from '../../components/Modal/Modal';
+import useProducts from '../../hooks/useProducts';
+import useTheme from '../../hooks/useTheme';
+import { filterAndSortProducts, getCategories } from '../../utils/productFilters';
+import './HomePage.css';
 
 function HomePage() {
-  const [products, setProducts] = useState([]);
+  const { products, loading, error } = useProducts();
+  const { theme, toggleTheme } = useTheme();
+
   const [searchValue, setSearchValue] = useState('');
   const [selectedProduct, setSelectedProduct] = useState(null);
-  const [loading, setLoading] = useState(true);
-  const [error, setError] = useState('');
 
-  useEffect(() => {
-    const fetchProducts = async () => {
-      try {
-        setLoading(true);
-        const response = await fetch('/data.json');
+  const [filters, setFilters] = useState({
+    minPrice: '',
+    maxPrice: '',
+    category: 'all',
+    sort: 'relevance',
+    onlyAffordable: false,
+  });
 
-        if (!response.ok) {
-          throw new Error('Не удалось загрузить товары');
-        }
-
-        const data = await response.json();
-        setProducts(data);
-      } catch (err) {
-        setError('Ошибка при загрузке данных');
-      } finally {
-        setLoading(false);
-      }
-    };
-
-    fetchProducts();
-  }, []);
+  const categories = useMemo(() => getCategories(products), [products]);
 
   const filteredProducts = useMemo(() => {
-    return products.filter((product) =>
-      product.title.toLowerCase().includes(searchValue.toLowerCase())
-    );
-  }, [products, searchValue]);
+    return filterAndSortProducts(products, searchValue, filters);
+  }, [products, searchValue, filters]);
 
   const handleOpenModal = (product) => {
     setSelectedProduct(product);
+    document.body.style.overflow = 'hidden';
   };
 
   const handleCloseModal = () => {
     setSelectedProduct(null);
+    document.body.style.overflow = 'auto';
+  };
+
+  const handleFilterChange = (name, value) => {
+    setFilters((prev) => ({
+      ...prev,
+      [name]: value,
+    }));
   };
 
   return (
-    <main className="home-page">
+    <main className="page">
       <div className="container">
-        <h1 className="home-page__title">Каталог товаров</h1>
+        <header className="hero">
+          <div>
+            <p className="hero__badge">Каталог товаров</p>
+            <h1 className="hero__title">Товары</h1>
+            <p className="hero__subtitle">
+              Поиск, фильтры и просмотр информации о товаре.
+            </p>
+          </div>
 
-        <Filters
-          searchValue={searchValue}
-          onSearchChange={setSearchValue}
-        />
+          <button className="theme-toggle" onClick={toggleTheme} type="button">
+            {theme === 'light' ? 'Ч/Б тема' : 'Цветная тема'}
+          </button>
+        </header>
 
-        {loading && <p>Загрузка...</p>}
-        {error && <p>{error}</p>}
+        <div className="layout">
+          <aside className="sidebar">
+            <Filters
+              searchValue={searchValue}
+              onSearchChange={setSearchValue}
+              filters={filters}
+              onFilterChange={handleFilterChange}
+              categories={categories}
+            />
+          </aside>
 
-        {!loading && !error && (
-          <ProductList
-            products={filteredProducts}
-            onCardClick={handleOpenModal}
-          />
-        )}
+          <section className="content">
+            <div className="content__topbar">
+              <h2 className="content__title">Список товаров</h2>
+              <p className="content__meta">Найдено: {filteredProducts.length}</p>
+            </div>
+
+            {loading && <p className="status">Загрузка...</p>}
+            {error && <p className="status status--error">{error}</p>}
+
+            {!loading && !error && (
+              <ProductList
+                products={filteredProducts}
+                onCardClick={handleOpenModal}
+              />
+            )}
+          </section>
+        </div>
 
         <Modal product={selectedProduct} onClose={handleCloseModal} />
       </div>
@@ -72,4 +97,4 @@ function HomePage() {
   );
 }
 
-export default HomePage;
+export default HomePage;   
