@@ -1,0 +1,322 @@
+[
+  {
+    "id": 1,
+    "title": "Смарт-часы X100",
+    "price": 7490,
+    "category": "Гаджеты",
+    "image": "https://picsum.photos/seed/product-01/800/600",
+    "description": "Водонепроницаемые смарт-часы с GPS, мониторингом сна и аккумулятором до 7 дней."
+  },
+  {
+    "id": 2,
+    "title": "Беспроводные наушники AirBeat S2",
+    "price": 5290,
+    "category": "Аудио",
+    "image": "https://picsum.photos/seed/product-02/800/600",
+    "description": "Компактные TWS-наушники с шумоподавлением и автономностью до 24 часов с кейсом."
+  },
+  {
+    "id": 3,
+    "title": "Портативная колонка SoundBox Mini",
+    "price": 3890,
+    "category": "Аудио",
+    "image": "https://picsum.photos/seed/product-03/800/600",
+    "description": "Bluetooth-колонка с защитой от брызг, насыщенным звуком и временем работы до 10 часов."
+  },
+  {
+    "id": 4,
+    "title": "Фитнес-браслет Pulse One",
+    "price": 2990,
+    "category": "Гаджеты",
+    "image": "https://picsum.photos/seed/product-04/800/600",
+    "description": "Легкий фитнес-браслет с шагомером, пульсометром и уведомлениями со смартфона."
+  },
+  {
+    "id": 5,
+    "title": "Электронная книга Reader Lite 6",
+    "price": 8990,
+    "category": "Электроника",
+    "image": "https://picsum.photos/seed/product-05/800/600",
+    "description": "Ридер с E-Ink экраном 6 дюймов, подсветкой и поддержкой популярных форматов книг."
+  },
+  {
+    "id": 6,
+    "title": "Внешний аккумулятор PowerMax 20000",
+    "price": 3490,
+    "category": "Аксессуары",
+    "image": "https://picsum.photos/seed/product-06/800/600",
+    "description": "Повербанк на 20000 мА·ч с быстрой зарядкой и двумя USB-портами."
+  },
+  {
+    "id": 7,
+    "title": "Беспроводная мышь ClickPro",
+    "price": 1790,
+    "category": "Компьютеры",
+    "image": "https://picsum.photos/seed/product-07/800/600",
+    "description": "Эргономичная мышь с тихими кнопками, точным сенсором и USB-ресивером."
+  },
+  {
+    "id": 8,
+    "title": "Механическая клавиатура KeyStorm K87",
+    "price": 6490,
+    "category": "Компьютеры",
+    "image": "https://picsum.photos/seed/product-08/800/600",
+    "description": "Компактная механическая клавиатура с RGB-подсветкой и прочным алюминиевым корпусом."
+  },
+  {
+    "id": 9,
+    "title": "Веб-камера VisionCam FHD",
+    "price": 4190,
+    "category": "Компьютеры",
+    "image": "https://picsum.photos/seed/product-09/800/600",
+    "description": "Веб-камера Full HD с автофокусом и встроенным микрофоном для видеозвонков."
+  },
+  {
+    "id": 10,
+    "title": "Игровой коврик SpeedPad XL",
+    "price": 1290,
+    "category": "Аксессуары",
+    "image": "https://picsum.photos/seed/product-10/800/600",
+    "description": "Увеличенный коврик для мыши с нескользящей основой и износостойкой поверхностью."
+  },
+  {
+    "id": 11,
+    "title": "Смартфон Nova 12",
+    "price": 24990,
+    "category": "Смартфоны",
+    "image": "https://picsum.photos/seed/product-11/800/600",
+    "description": "Смартфон с AMOLED-экраном, тройной камерой и поддержкой быстрой зарядки."
+  },
+  {
+    "id": 12,
+    "title": "Защитное стекло Glass Shield Pro",
+    "price": 690,
+    "category": "Аксессуары",
+    "image": "https://picsum.photos/seed/product-12/800/600",
+    "description": "Прочное защитное стекло с олеофобным покрытием и высокой прозрачностью."
+  },
+  {
+    "id": 13,
+    "title": "Чехол SoftCover для смартфона",
+    "price": 890,
+    "category": "Аксессуары",
+    "image": "https://picsum.photos/seed/product-13/800/600",
+    "description": "Гибкий силиконовый чехол с усиленными углами для защиты от падений."
+  },
+  {
+    "id": 14,
+    "title": "Планшет TabAir 10",
+    "price": 18990,
+    "category": "Планшеты",
+    "image": "https://picsum.photos/seed/product-14/800/600",
+    "description": "Тонкий планшет с 10-дюймовым дисплеем, стереодинамиками и поддержкой стилуса."
+  },
+  {
+    "id": 15,
+    "title": "Стилус Smart Pen",
+    "price": 2590,
+    "category": "Планшеты",
+    "image": "https://picsum.photos/seed/product-15/800/600",
+    "description": "Чувствительный стилус для рисования и заметок с минимальной задержкой."
+  },
+  {
+    "id": 16,
+    "title": "Ноутбук UltraBook 14",
+    "price": 58990,
+    "category": "Ноутбуки",
+    "image": "https://picsum.photos/seed/product-16/800/600",
+    "description": "Легкий ноутбук для работы и учебы с SSD, IPS-экраном и временем работы до 12 часов."
+  },
+  {
+    "id": 17,
+    "title": "Подставка для ноутбука AirStand",
+    "price": 1990,
+    "category": "Аксессуары",
+    "image": "https://picsum.photos/seed/product-17/800/600",
+    "description": "Складная алюминиевая подставка для ноутбука с регулировкой угла наклона."
+  },
+  {
+    "id": 18,
+    "title": "USB-C хаб MultiPort 7-in-1",
+    "price": 3290,
+    "category": "Компьютеры",
+    "image": "https://picsum.photos/seed/product-18/800/600",
+    "description": "Многофункциональный USB-C хаб с HDMI, USB 3.0, картридером и PD-зарядкой."
+  },
+  {
+    "id": 19,
+    "title": "Монитор ViewMax 27",
+    "price": 15990,
+    "category": "Компьютеры",
+    "image": "https://picsum.photos/seed/product-19/800/600",
+    "description": "27-дюймовый монитор с IPS-матрицей, тонкими рамками и разрешением 2560x1440."
+  },
+  {
+    "id": 20,
+    "title": "Настольная лампа LightFlex LED",
+    "price": 2390,
+    "category": "Дом",
+    "image": "https://picsum.photos/seed/product-20/800/600",
+    "description": "LED-лампа с регулировкой яркости и цветовой температуры для рабочего стола."
+  },
+  {
+    "id": 21,
+    "title": "Умная лампочка SmartLight E27",
+    "price": 1190,
+    "category": "Умный дом",
+    "image": "https://picsum.photos/seed/product-21/800/600",
+    "description": "Светодиодная лампочка с управлением через приложение и голосовыми ассистентами."
+  },
+  {
+    "id": 22,
+    "title": "Розетка Wi-Fi HomePlug",
+    "price": 1490,
+    "category": "Умный дом",
+    "image": "https://picsum.photos/seed/product-22/800/600",
+    "description": "Умная розетка с таймером, удаленным управлением и мониторингом энергопотребления."
+  },
+  {
+    "id": 23,
+    "title": "Робот-пылесос CleanBot S5",
+    "price": 16990,
+    "category": "Дом",
+    "image": "https://picsum.photos/seed/product-23/800/600",
+    "description": "Робот-пылесос с влажной уборкой, построением карты помещения и управлением со смартфона."
+  },
+  {
+    "id": 24,
+    "title": "Увлажнитель воздуха Misty Air",
+    "price": 4590,
+    "category": "Дом",
+    "image": "https://picsum.photos/seed/product-24/800/600",
+    "description": "Тихий увлажнитель воздуха с большим резервуаром и автоматическим отключением."
+  },
+  {
+    "id": 25,
+    "title": "Электрочайник HeatPro 1.7",
+    "price": 2790,
+    "category": "Кухня",
+    "image": "https://picsum.photos/seed/product-25/800/600",
+    "description": "Электрочайник из нержавеющей стали с быстрым нагревом и защитой от включения без воды."
+  },
+  {
+    "id": 26,
+    "title": "Кофеварка Aroma Brew",
+    "price": 7990,
+    "category": "Кухня",
+    "image": "https://picsum.photos/seed/product-26/800/600",
+    "description": "Капельная кофеварка с таймером, подогревом колбы и многоразовым фильтром."
+  },
+  {
+    "id": 27,
+    "title": "Блендер MixGo 800",
+    "price": 3690,
+    "category": "Кухня",
+    "image": "https://picsum.photos/seed/product-27/800/600",
+    "description": "Мощный блендер с несколькими скоростями и импульсным режимом для смузи и соусов."
+  },
+  {
+    "id": 28,
+    "title": "Тостер CrispToast 2",
+    "price": 2190,
+    "category": "Кухня",
+    "image": "https://picsum.photos/seed/product-28/800/600",
+    "description": "Компактный тостер с регулировкой степени поджаривания и функцией разморозки."
+  },
+  {
+    "id": 29,
+    "title": "Фен HairDry Pro",
+    "price": 3390,
+    "category": "Красота",
+    "image": "https://picsum.photos/seed/product-29/800/600",
+    "description": "Фен с ионизацией, несколькими температурными режимами и насадкой-концентратором."
+  },
+  {
+    "id": 30,
+    "title": "Электробритва SmoothFace X",
+    "price": 6190,
+    "category": "Красота",
+    "image": "https://picsum.photos/seed/product-30/800/600",
+    "description": "Роторная электробритва с влажным и сухим бритьем и долгой автономной работой."
+  },
+  {
+    "id": 31,
+    "title": "Триммер BeardMaster",
+    "price": 2890,
+    "category": "Красота",
+    "image": "https://picsum.photos/seed/product-31/800/600",
+    "description": "Точный триммер для бороды и усов с набором насадок и регулировкой длины."
+  },
+  {
+    "id": 32,
+    "title": "Спортивная бутылка AquaFit",
+    "price": 790,
+    "category": "Спорт",
+    "image": "https://picsum.photos/seed/product-32/800/600",
+    "description": "Легкая бутылка для воды с герметичной крышкой и удобной петлей для переноски."
+  },
+  {
+    "id": 33,
+    "title": "Йога-коврик FlexMat",
+    "price": 1590,
+    "category": "Спорт",
+    "image": "https://picsum.photos/seed/product-33/800/600",
+    "description": "Нескользящий коврик для йоги и фитнеса с оптимальной амортизацией."
+  },
+  {
+    "id": 34,
+    "title": "Гантели NeoFit 2x5 кг",
+    "price": 4290,
+    "category": "Спорт",
+    "image": "https://picsum.photos/seed/product-34/800/600",
+    "description": "Пара гантелей с неопреновым покрытием для домашних тренировок."
+  },
+  {
+    "id": 35,
+    "title": "Экшн-камера ActionGo 4K",
+    "price": 11990,
+    "category": "Фото и видео",
+    "image": "https://picsum.photos/seed/product-35/800/600",
+    "description": "Экшн-камера с записью 4K, стабилизацией изображения и водонепроницаемым кейсом."
+  },
+  {
+    "id": 36,
+    "title": "Штатив Tripod Lite",
+    "price": 2490,
+    "category": "Фото и видео",
+    "image": "https://picsum.photos/seed/product-36/800/600",
+    "description": "Компактный штатив для камеры и смартфона с регулируемой высотой."
+  },
+  {
+    "id": 37,
+    "title": "Кольцевая лампа RingLight 12",
+    "price": 3190,
+    "category": "Фото и видео",
+    "image": "https://picsum.photos/seed/product-37/800/600",
+    "description": "Кольцевая лампа для съемки и стримов с держателем для смартфона."
+  },
+  {
+    "id": 38,
+    "title": "Рюкзак UrbanPack 20L",
+    "price": 3590,
+    "category": "Аксессуары",
+    "image": "https://picsum.photos/seed/product-38/800/600",
+    "description": "Городской рюкзак с отделением для ноутбука, влагозащитной тканью и USB-выходом."
+  },
+  {
+    "id": 39,
+    "title": "Чемодан TravelCase M",
+    "price": 6990,
+    "category": "Путешествия",
+    "image": "https://picsum.photos/seed/product-39/800/600",
+    "description": "Прочный чемодан среднего размера на колесах с кодовым замком."
+  },
+  {
+    "id": 40,
+    "title": "Настенные часы Minimal Clock",
+    "price": 1890,
+    "category": "Дом",
+    "image": "https://picsum.photos/seed/product-40/800/600",
+    "description": "Лаконичные настенные часы в минималистичном дизайне для дома или офиса."
+  }
+]
