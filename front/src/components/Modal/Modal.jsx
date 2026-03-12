@@ -16,7 +16,7 @@ function Modal({ product, onClose }) {
         handleClose();
       }
     };
-
+//  обрабатываем Escape только в момент, когда модальное окно открыто.
     document.addEventListener('keydown', handleEscClose);
 
     return () => {

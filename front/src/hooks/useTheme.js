@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-
+// хук для переключения темы и сохранения выбранного режима в localStorage.
 function useTheme() {
   const [theme, setTheme] = useState('light');
 

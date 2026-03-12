@@ -1,5 +1,5 @@
 import { getSearchRank } from './searchUtils';
-
+// описание фильтрации по категориям, цене, алфавиту
 export function getCategories(products) {
   const uniqueCategories = [...new Set(products.map((product) => product.category))];
   return uniqueCategories.sort((a, b) => a.localeCompare(b, 'ru'));
