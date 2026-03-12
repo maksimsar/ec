@@ -4,7 +4,7 @@ function useProducts() {
   const [products, setProducts] = useState([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState('');
-
+ // загружаем данные из локального файла data.json через fetch, имитируя запрос к API
   useEffect(() => {
     const fetchProducts = async () => {
       try {

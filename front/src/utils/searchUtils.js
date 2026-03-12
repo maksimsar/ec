@@ -1,3 +1,4 @@
+// Считаем расстояние Левенштейна между двумя строками
 export function levenshtein(a, b) {
   const first = a.toLowerCase().trim();
   const second = b.toLowerCase().trim();
@@ -32,44 +33,32 @@ export function levenshtein(a, b) {
 
   return matrix[first.length][second.length];
 }
-
+// обычный поиск по вхождению строки в название товара, а также с учетом опечаток (до 1 символа для коротких слов и до 2 для длинных)
 export function getSearchRank(query, product) {
   const normalizedQuery = query.toLowerCase().trim();
   const title = product.title.toLowerCase();
-  const category = product.category.toLowerCase();
   const words = title.split(/[\s-]+/).filter(Boolean);
 
-  if (!normalizedQuery) return 1000;
-
-  if (title === normalizedQuery) return 0;
-
-  if (words.some((word) => word === normalizedQuery)) return 1;
-
-  if (title.startsWith(normalizedQuery)) return 2;
-
-  if (words.some((word) => word.startsWith(normalizedQuery))) return 3;
-
-  if (title.includes(normalizedQuery)) return 4;
-
-  if (category.includes(normalizedQuery) && normalizedQuery.length >= 3) return 6;
+  if (!normalizedQuery) {
+    return 0;
+  }
 
   if (normalizedQuery.length < 2) {
     return Number.POSITIVE_INFINITY;
   }
 
-  const distances = words.map((word) => {
-    const distance = levenshtein(normalizedQuery, word);
-    return distance / Math.max(word.length, normalizedQuery.length);
-  });
-
-  const minDistance = Math.min(...distances);
-
-  if (normalizedQuery.length <= 3 && minDistance <= 0.34) {
-    return 8 + minDistance;
+  if (title.includes(normalizedQuery)) {
+    return 1;
   }
 
-  if (normalizedQuery.length > 3 && minDistance <= 0.4) {
-    return 8 + minDistance;
+  const minDistance = Math.min(
+    ...words.map((word) => levenshtein(normalizedQuery, word))
+  );
+
+  const allowedDistance = normalizedQuery.length <= 4 ? 1 : 2;
+
+  if (minDistance <= allowedDistance) {
+    return 2 + minDistance;
   }
 
   return Number.POSITIVE_INFINITY;

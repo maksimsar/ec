@@ -52,13 +52,11 @@ function HomePage() {
           <div>
             <p className="hero__badge">Каталог товаров</p>
             <h1 className="hero__title">Товары</h1>
-            <p className="hero__subtitle">
-              Поиск, фильтры и просмотр информации о товаре.
-            </p>
+
           </div>
 
           <button className="theme-toggle" onClick={toggleTheme} type="button">
-            {theme === 'light' ? 'Ч/Б тема' : 'Цветная тема'}
+            {theme === 'light' ? 'Темная тема' : 'Светлая тема'}
           </button>
         </header>
 

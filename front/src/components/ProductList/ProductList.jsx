@@ -5,9 +5,9 @@ function ProductList({ products, onCardClick }) {
   if (!products.length) {
     return (
       <div className="empty-state">
-        <h3 className="empty-state__title">Ничего не найдено</h3>
+        <h3 className="empty-state__title">Ничего не нашли(</h3>
         <p className="empty-state__text">
-          Попробуй изменить фильтры или поисковый запрос.
+          Попробуй еще раз!
         </p>
       </div>
     );

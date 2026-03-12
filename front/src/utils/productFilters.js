@@ -42,7 +42,7 @@ export function filterAndSortProducts(products, searchValue, filters) {
   } else if (filters.sort === 'title-desc') {
     result.sort((a, b) => b.title.localeCompare(a.title, 'ru'));
   } else if (filters.sort === 'relevance' && searchValue.trim()) {
-    result.sort((a, b) => a.searchRank - b.searchRank || a.price - b.price);
+    result.sort((a, b) => a.searchRank - b.searchRank);
   }
 
   return result;

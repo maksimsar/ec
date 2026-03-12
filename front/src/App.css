@@ -4,7 +4,7 @@
   --surface-2: #f5ede3;
   --text: #1a1a1a;
   --text-muted: #6b625b;
-  --accent: #ff335f;
+  --accent: #ff1500;
   --border: #e5d8c9;
 }
 
@@ -32,7 +32,6 @@ body {
   margin: 0;
   background: var(--bg);
   color: var(--text);
-  font-family: inherit;
 }
 
 img {

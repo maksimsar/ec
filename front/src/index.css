@@ -1,5 +1,18 @@
+
+@font-face {
+  font-family: 'Narezka';
+  src: url('./assets/fonts/Narezka.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
 html,
 body,
 #root {
   min-height: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: 'Narezka', sans-serif;
 }

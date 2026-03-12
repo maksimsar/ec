@@ -63,7 +63,7 @@ function Filters({
           value={filters.sort}
           onChange={(e) => onFilterChange('sort', e.target.value)}
         >
-          <option value="relevance">По релевантности</option>
+          <option value="relevance">Лучшее соовпадение</option>
           <option value="price-asc">Сначала дешевле</option>
           <option value="price-desc">Сначала дороже</option>
           <option value="title-asc">Название А-Я</option>
